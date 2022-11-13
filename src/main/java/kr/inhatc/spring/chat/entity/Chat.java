@@ -12,13 +12,15 @@ import lombok.Data;
 public class Chat
 {
 	@Id
-	private String id; 
+	private String id; 					// 아이디 
 	
-	private String msg;
+	private String msg;					// 메시지 
 	
-	private String sender;
+	private String sender;				// 보내는 사람 
+		
+	private String receiver;			// 받는 사람(귓속말)
 	
-	private String receiver;
+	private Integer roomNum;			// 방 번호
 	
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt;	// 생성 시간 
 }
